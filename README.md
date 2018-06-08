@@ -26,7 +26,11 @@
 
 ### Iniciando o servidor JSON independente
 
-`node backend/server`
+`nodemon --watch backend backend/server.js`
+
+## Comandos usuais
+- Para gerar arquivos de componentes (CSS/html/ts)
+ng g c folder --spec=false *para não gerar spec.ts*
 
 ## Goodies
 
