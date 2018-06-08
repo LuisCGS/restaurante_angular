@@ -24,6 +24,10 @@
 
 `json-server db.json`
 
+### Iniciando o servidor JSON independente
+
+`node backend/server`
+
 ## Goodies
 
 Expressões regulares usadas na validação de formulários
