@@ -3,7 +3,7 @@ import { ShoppingCartService } from "../restaurants/restaurant-detail/shopping-c
 import { CartItem } from "../restaurants/restaurant-detail/shopping-cart/cart-item.model";
 import { Order } from "./order.model";
 
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 
@@ -41,6 +41,8 @@ export class OrderService {
 	}
 
 	checkOrder(order: Order): Observable<string> {
+
+
 		return this.http.post<Order>(`${MEAT_API}/orders`, order)
 			.map(order => order.id);
 	}
